@@ -1,0 +1,105 @@
+SASS
+No es lenguaje. Es un metodo para escribir. Es un preprocesador de Css
+Permite escribir de una forma mas sencilla el Css
+El navegador no renderiza a SASS. Todo lo que se hace con SASS se debe compilar. Traducir de SASS a CSS
+
+Estructura de archivos
+Carpeta Sass extencion .sass
+En el sass puede tener un hoja de estilo que se llame styles.sass
+Permite particionar las hojas de estilos. Pequeños archivos que compilen CSS
+el import en SASS nos permite 
+En Sass se hace un hoja principal por ejemplo styles.sass
+y luego las demas hojas se compilan
+
+_reset.sass
+_textos.sass
+_layout.sass
+todo esto queda importado en styles.sass
+@import _reset
+@import _textos
+@import _layout
+
+Sintaxis
+No se usa la llave {}
+el ; tampoco es necesario
+las propiedades no pueden ir unidas con los compiladores
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+ruby 2.3.0p0 (2015-12-25 revision 53290) [i386-mingw32]
+
+C:\Users\xx>gen install sass
+"gen" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\xx>gem install sass
+Fetching: sass-3.4.22.gem (100%)
+Successfully installed sass-3.4.22
+Parsing documentation for sass-3.4.22
+Installing ri documentation for sass-3.4.22
+Done installing documentation for sass after 17 seconds
+1 gem installed
+
+C:\Users\xx>sass --v
+Sass 3.4.22 (Selective Steve)
+
+C:\Users\xx>cd ..
+
+C:\Users>cd ..
+
+C:\>cd curso
+
+C:\Curso>cd clase-09
+
+C:\Curso\clase-09>cd sass
+
+C:\Curso\clase-09\sass>sass --watch
+What files should I watch? Did you mean something like:
+    sass --watch input.sass:output.css
+    sass --watch input-dir:output-dir
+  Use --trace for backtrace.
+
+C:\Curso\clase-09\sass>cd ..
+
+C:\Curso\clase-09>sass --watch sass/styles.sass:css/styles.css
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+      write css/styles.css
+      write css/styles.css.map
+>>> Change detected to: sass/_reset.sass
+      write css/styles.css
+      write css/styles.css.map
+>>> Change detected to: sass/_reset.sass
+      write css/styles.css
+      write css/styles.css.map
+>>> Change detected to: sass/_reset.sass
+      write css/styles.css
+      write css/styles.css.map
+>>> Change detected to: sass/_reset.sass
+WARNING on line 5 of sass/_reset.sass:
+This selector doesn't have any properties and will not be rendered.
+      error sass/_reset.sass (Line 5: Invalid CSS after "margin ": expected sele
+ctor, was "0")
+>>> Change detected to: sass/_reset.sass
+      write css/styles.css
+      write css/styles.css.map
+>>> Change detected to: sass/_reset.sass
+      write css/styles.css
+      write css/styles.css.map
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+Variable
+Linea de codigo que almacena informacion para despues poder reutilizarla
+$maincolor: #ff0000
+$mainwidth:1200
+archivo _variables.sass
+
+MIXINS
+no parametricos y parametricos
+Conjunto de propiedades que se pueden aplicar a un elemento definido
+=redondo
+	border-radius
+	etc
+	para aplicarlo uso +
+
+
