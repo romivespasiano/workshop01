@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 /*font-family: 'Raleway', sans-serif;*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
@@ -20,8 +20,13 @@ header{
 	border-radius: 5px;
 	border-color: #ccc;
 	border-bottom: 3px solid #ff007e;
-	background-color: #1c1a1b;
-	color: #bfbfbf;
+	/*background-color: #1c1a1b;*/
+	color: #19255f;
+	background-color: rgba(0,0,0,0.8);
+	background: url(../images/vintage.jpg) center center/cover;
+	min-height: 300px;
+	font-size: 16px;
+	font-weight: bold;
 
 }
 
@@ -42,25 +47,24 @@ li{
 }
 a{
 	text-decoration: none;
-	color: #bfbfbf;
+	color: #19255f;
 }
 a:hover{
-	color:#fff;
+	color:#bd0042;
 
 }
 h1{
-	font-family:'Raleway', sans-serif;
-	font-size: 28px;
-	color:#fa8791;
+	font-family:'Montserrat', sans-serif;
+	font-size: 32px;
+	color:#fFF;
 }
 img{
-	width: 50px;
 	color: #686363;
 	padding: 13px;
 }
 img:hover{
 	/*background: url(../images/bootstrap2.svg);*/
-	width: 50px;
+	
 }
 .cleaner{
 	clear: both;
@@ -73,13 +77,22 @@ img:hover{
 }
 .cv-foto{
 	float: right;
-	padding: 0 25px;
+    padding: 20px 50px 50px 60px;
+    margin: 0 50px;
 
 }
+.foto{
+	border-radius: 50%;
+}
+figure{
+	background-color: #f9eddd;
+
+}
+
 .cv-topizq{
 	float: left;
 	/*background-color: red;*/
-	margin-top: 10px;
+	margin-top: 50px;
 	margin-left: 4.090909090909091%;
 }
 
@@ -95,10 +108,10 @@ img:hover{
 }
 
 .profile h2{
-	font-family:'Raleway', sans-serif;
+	font-family:'Montserrat', sans-serif;
 	font-size: 25px;
 	vertical-align: middle;
-	color: #686363;
+	color: #19255f;
 	
 }
 .profile-icon{
@@ -120,7 +133,7 @@ img:hover{
 	height: 300px;
 }
 .skills h2{
-	color: #686363;
+	color: #19255f;
 }
 .skills article{
 	text-align: center;
@@ -137,19 +150,31 @@ img:hover{
 }
 .skill-icon{
 	font-size: 60px;
+	color: #19255f;
 }
 .skill-icon:hover{
-	color:#ff007e;
+	color:#bd0042;
+}
+.icon-bootstrap{
+	width: 19%;
+}
+.icon-bootstrap:hover{
+	color: #fff;
+}
+.star{
+	color:#bd0042;
+
 }
 .university{
 	border-bottom: 1px solid #ff007e;
-	color: #686363;
+	color: #19255f;
 	margin-bottom: 20px;
 	height: 350px;
 }
 .education{
 	margin-left: 100px;
-	color: #4c4b4b;
+	color: #bd0042;
+
 }
 .education p{
 	color: #4c4b4b;
@@ -169,7 +194,7 @@ img:hover{
 	height: 350px;
 }
 .contactocaja h2{
-	color: #4c4b4b;
+	color: #19255f;
 }
 .contacto{
 	text-align: center;
@@ -222,8 +247,10 @@ img:hover{
 	text-align: center;
 
 }
-
+		
 @media(max-width:860px) {
+	
+
 
 	.profile h2{
 	text-align: center;
@@ -261,15 +288,20 @@ img:hover{
 } 
 
 @media(max-width:700px){
+	header{
+		padding: 5px;
+	}
 	.cv-foto{
 	display: none;
 
 }
+
 .cv-topizq{
 	float: none;
 	text-align: center;
-    margin-bottom: 15px;
+   /* margin-bottom: 15px;*/
 }
+
 .skills{
 	height: 500px;
 }
@@ -281,6 +313,8 @@ img:hover{
     width: 87%;
 }
 @media(max-width:480px){
+	
+
 	.profile{
 		height: 230px;
 	}
@@ -299,6 +333,9 @@ img:hover{
     }
     .contacto-izq {
     width: 94%;
+}
+.icon-bootstrap {
+    width: 12%;
 }
 .contacto-der {
     width: 91%;
